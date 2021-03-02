@@ -1,2 +1,3 @@
-# jackiec1998.github.io
-Personal Website
+# Personal Website for Jackie Chan
+
+Built by persistant Googling.
