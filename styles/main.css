@@ -14,18 +14,15 @@ a {
   padding: 2% 15%;
 
   gap: 40px;
-  /* background-color: blueviolet; */
 }
 
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   padding: 10px 0px;
   gap: 10px;
-  /* background-color: blanchedalmond; */
 }
 
 .profile-picture {
@@ -65,7 +62,6 @@ a {
   max-width: 1000px;
   align-self: center;
   width: 100%;
-  /* background-color: aqua; */
 }
 
 .sidetext, .mainbar p {
@@ -78,4 +74,10 @@ a {
 
 .icons i {
   color: white;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
