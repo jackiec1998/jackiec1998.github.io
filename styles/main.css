@@ -78,6 +78,7 @@ a:hover {
 
 .icons i {
   color: white;
+  transition: all .2s ease-in-out;
 }
 
 .icons i:hover {
