@@ -1,47 +1,27 @@
-html * {
-  font-family: 'Work Sans', sans-serif !important;
-  color: white;
-}
-
-body {
-  background-color: #0A1931;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-p {
-  font-size: 24px;
-  line-height: 28px;
-}
-
-
 a {
   font-style: normal;
   text-decoration: none;
-  color: #00ADB5;
+  /* color: #00ADB5; */
 }
 
-.center {
+.flex-container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  justify-content: center;
   padding: 2% 15%;
 
   gap: 40px;
+  /* background-color: blueviolet; */
 }
+
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   padding: 10px 0px;
   gap: 10px;
-}
-
-.mainbar {
+  /* background-color: blanchedalmond; */
 }
 
 .profile-picture {
@@ -55,16 +35,31 @@ a {
 }
 
 .name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   font-size: 36px;
   line-height: 42px;
 }
 
-.name-subtext {
+.sidetext, .mainbar h1 {
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 28px;
 }
 
-.email {
+.mainbar p {
+  font-family: 'Amiko', sans-serif;
   font-size: 24px;
   line-height: 28px;
+}
+
+.mainbar h1 {
+  font-size: 36px;
+}
+
+.mainbar {
+  max-width: 1000px;
+  align-self: center;
+  width: 100%;
+  /* background-color: aqua; */
 }
