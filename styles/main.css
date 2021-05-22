@@ -1,37 +1,70 @@
+html * {
+  font-family: 'Work Sans', sans-serif !important;
+  color: white;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 20vh;
-    background-color: #1b262c;
-    color: white;
+  background-color: #0A1931;
 }
 
-.main {
-    margin-left: 325px;
-    padding: 0px 10px;
+h1 {
+  font-size: 36px;
 }
 
-.side {
-    height: 100%;
-    width: 300px;
-    position: fixed;
+p {
+  font-size: 24px;
+  line-height: 28px;
 }
 
-img {
-    border-radius: 75%;
-}
-
-.links {
-    text-align: center;
-    margin-top:10vh;
-    color: white;
-}
 
 a {
-    /* removes underscores from icons for some reason. */
-    color: #1b262c;
-    padding: 5px;
+  font-style: normal;
+  text-decoration: none;
+  color: #00ADB5;
 }
 
-i.fa, i.fas {
-    color: white;
+.center {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2% 15%;
+
+  gap: 40px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 10px;
+}
+
+.mainbar {
+}
+
+.profile-picture {
+  width: 300px;
+  height: 300px;
+  border-radius:30px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 5px 0px;
+}
+
+.name {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.name-subtext {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.email {
+  font-size: 24px;
+  line-height: 28px;
 }
