@@ -1,3 +1,7 @@
+body {
+  background-color: #222;
+}
+
 a {
   font-style: normal;
   text-decoration: none;
@@ -62,4 +66,12 @@ a {
   align-self: center;
   width: 100%;
   /* background-color: aqua; */
+}
+
+.sidetext, .mainbar p {
+  color: rgb(192, 192, 192);
+}
+
+.name, .mainbar h1 {
+  color: white;
 }
