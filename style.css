@@ -1,0 +1,97 @@
+body {
+  background-color: #EEE;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  margin: 5px 0px;
+  color: #2F2F2F;
+}
+
+ul {
+  text-align: center;
+  list-style: inside;
+}
+
+a {
+  text-decoration: none;
+  color: #2860BC;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f3c974;
+}
+
+#main-column {
+  display: flex;
+  justify-content: center;
+  padding: 2% 30%;
+  gap: 40px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  min-width: 800px;
+  gap: 20px;
+}
+
+#name {
+  font-size: 2em;
+  color: #3C3C3C;
+}
+
+#about-me {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  /* background-color: brown; */
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#profile-picture {
+  height: 250px;
+  width: 250px;
+  background: url("images/me.jpg");
+  background-size: contain;
+  border-radius: 20px;
+}
+
+#profile-picture:hover {
+  background: url("images/rocky.jpg");
+  background-size: contain;
+}
+
+tt {
+  font-size: 1.2em;
+}
+
+#icons i {
+  color: #2F2F2F;
+  transition: all .2s ease-in-out;
+}
+
+#icons i:hover {
+  transform: scale(1.1);
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
