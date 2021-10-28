@@ -26,8 +26,6 @@ a:hover {
 #main-column {
   display: flex;
   justify-content: center;
-  padding: 2% 30%;
-  gap: 40px;
 }
 
 #content {
