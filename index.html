@@ -3,7 +3,10 @@
 <html lang="en">
   <head>
     <title>Jackie Chan</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -13,89 +16,145 @@
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/678f3d77bf.js" crossorigin="anonymous"></script>
 
+    <!-- Make all links open a new tab/window. -->
     <base target="_blank">
+
+    <script>
+      function changeName(name) {
+        document.getElementById('name').textContent = name;
+      }
+    </script>
   </head>
 
   <body>
     <div id="main-column">
-      <div id="content">
-        <div id="header">
-          <div id="profile">
-            <!-- <img id="profile-picture" src="images/me.jpg" alt="Jackie Chan"> -->
-            <div id="profile-picture"></div>
-            <tt>jackiec3@illinois.edu</tt>
-          </div>
-          <div id="about-me">
-            <b id="name">Jackie Chan</b>
+      <header></header>
+      
+      <div id="profile">
+        <div id="card">
+          <img id="profile-picture"
+                src="images/me.jpg"
+                onmouseover="this.src='images/rocky.jpg'; changeName('Rocky Chan')"
+                onmouseout="this.src='images/me.jpg'; changeName('Jackie Chan')">
+          <tt>jackiec3@illinois.edu</tt>
 
-            <p>
-              I’m a second year Ph.D. student in the <a href="https://cs.illinois.edu/">Department of Computer Science</a> at the <a href="https://illinois.edu/"> University of Illinois at Urbana-Champaign</a>.
-            </p>
-
-            <p>
-              My research areas are social computing, computer science education (CSEd), and human-computer interaction (HCI). I’m currently being advised by <a href="http://www.eshwarchandrasekharan.com/">Dr. Eshwar Chandrasekharan</a> and a member of his lab: <a href="http://www.eshwarchandrasekharan.com/lab.html">SCUBA</a>.
-            </p>
-
-            <p>
-              I earned a Bachelor of Arts in computer science and mathematics at <a href="https://www.carleton.edu/">Carleton College</a> in Northfield, Minnesota.
-            </p>
-
-            <p>
-              My CV is available <a href="documents/chan_jackie_cv.pdf">here</a>. Last updated ____.
-            </p>
-
-            <div id="icons">
-              <a title="GitHub Page" href="https://github.com/jackiec1998"><i class="fab fa-github-square fa-2x"></i></a>
-              <a title="LinkedIn Page" href="https://www.linkedin.com/in/jackie-chan-uiuc/"><i class="fab fa-linkedin fa-2x"></i></a>
-              <a title="Twitter Page" href="https://twitter.com/jackie_uiuc"><i class="fab fa-twitter-square fa-2x"></i></a>
-              <a title="Reddit Account" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-reddit-square fa-2x"></i></a>
-            </div>
-
+          <div id="icons">
+            <a title="GitHub Page" href="https://github.com/jackiec1998"><i class="fab fa-github-square fa-2x"></i></a>
+            <a title="LinkedIn Page" href="https://www.linkedin.com/in/jackie-chan-uiuc/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a title="Twitter Page" href="https://twitter.com/jackie_uiuc"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a title="Reddit Account" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-reddit-square fa-2x"></i></a>
           </div>
         </div>
-
-        <div id="education">
-          <b id="name">Education</b>
-
+  
+        <article>
+          <h1 id="name">Jackie Chan</h1>
+  
           <p>
-            <a href="https://illinois.edu/"> University of Illinois at Urbana-Champaign</a>, Urbana, Illinois <br>
-            Doctor of Philosophy in Computer Science, Expected 2026
+            I’m a second year Ph.D. student in the <a href="https://cs.illinois.edu/">Department of Computer Science</a> at the <a href="https://illinois.edu/"> University of Illinois at Urbana-Champaign</a>.
           </p>
 
           <p>
-            <a href="https://www.carleton.edu/">Carleton College</a>, Northfield, Minnesota <br>
-            Bachelor of Arts in Computer Science & Mathematics, 2020
+            My research areas are social computing, computer science education (CSEd), and human-computer interaction (HCI). I’m currently being advised by <a href="http://www.eshwarchandrasekharan.com/">Dr. Eshwar Chandrasekharan</a> and a member of his lab: <a href="http://www.eshwarchandrasekharan.com/lab.html">SCUBA</a>.
           </p>
-        </div>
-
-        <div id="research">
-          <b id="name">Research</b>
-          <h2>Ongoing</h2>
-
-          <h2>Past</h2>
-        </div>
-
-        <div id="teaching">
-          <b id="name">Teaching</b>
 
           <p>
-            <a href="https://www.cs124.org/">CS 125 / 124: Introduction to Computer Science</a>, <a href="https://www.geoffreychallen.com/">Dr. Geoffrey Challen</a> <br>
-            Fall 2020, Spring 2021, Summer 2021
+            I earned a Bachelor of Arts in computer science and mathematics at <a href="https://www.carleton.edu/">Carleton College</a> in Northfield, Minnesota.
           </p>
-        </div>
 
-        <div id="awards">
-          <b id="name">Awards</b>
           <p>
-            <a href="https://cs.illinois.edu/about/awards/graduate-fellowships-awards/outstanding-teaching-assistants">Outstanding Teaching Assistant</a> <br>
-            Spring 2021
+            My CV is available <a href="documents/chan_jackie_cv.pdf">here</a>. Last updated October 2021.
           </p>
-        </div>
-
-        <div id="service">
-
-        </div>
+        </article>
+  
       </div>
+  
+      <article>
+        <h1>Education</h1>
+  
+        <p>
+          <a href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a> <span class="flush-right">Urbana, IL</span> <br>
+          <i>Doctor of Philosophy in Computer Science</i> <span class="flush-right">Expected 2026</span> <br>
+        </p>
+  
+        <p>
+          <a href="https://www.carleton.edu/">Carleton College</a> <span class="flush-right">Northfield, MN</span> <br>
+          <i>Bachelor of Arts in Computer Science & Mathematics, Cum Laude</i> <span class="flush-right">2020</span>
+        </p>
+      </article>
+
+      <article>
+        <h1>Research</h1>
+
+        <h2>Statement</h2>
+
+        <p>
+          I primarily work in <i>social computing</i> studying online community behaviors and dynamics, particularly how we make these virtual spaces both inclusive and productive. Currently, I'm working on expanding our notions of community success to encompass a community's ability to overcome crisis: community resilience. I also collaborate with computer science education researchers by understanding how students learn Structured Query Language (SQL)—a paradigm shift from studying imperative programming languages usually taught. Through my scholarly work, I strive to make significant impacts in how we cultivate online spaces and educate the next generation of computer scientists.
+        </p>
+
+        <p>
+          <i>Topics: social computing, human-computer interaction, computer science education.</i>
+        </p>
+        
+        <h2>Ongoing</h2>
+
+        <p>
+          <i>Studying and Identifying Features of Resilient Online Communities</i> <br>
+          Advised by <a href="http://www.eshwarchandrasekharan.com/">Dr. Eshwar Chandrasekharan</a> and <a href="http://steviechancellor.com/">Dr. Stevie Chancellor</a>.
+        </p>
+
+        <p>
+          <i>Foundational Research and Data-Driven Tool Development to Enchance Learning of Database Programming</i> <br>
+          National Science Foundation-supported project led by <a href="https://publish.illinois.edu/glherman/">Dr. Geoffrey Herman</a>.
+        </p>
+
+        <h2>Past</h2>
+
+        <p>
+          <i>Analyzing Collaborative Documentation Patterns on Wikipedia During the 2019-2020 Hong Kong Protests</i> <br>
+          Senior thesis advised by <a href="http://www.snehanarayan.com/">Dr. Sneha Narayan</a> at Carleton College. <br>
+          <a href="documents/chan-jackie-cs-comps.pdf">Thesis</a>
+        </p>
+
+        <p>
+          <i>Guiding Mathematical Discovery with Middle School Students</i> <br>
+          Senior thesis advised by <a href="https://www.carleton.edu/directory/dhaunspe/">Dr. Deanna Haunsperger</a> at Carleton College. <br>
+          <a href="documents/chan-jackie-math-comps.pdf">Thesis</a>
+        </p>
+
+        <p>
+          <i>Understanding the Usage and Familiarity Home Networking Terminology Using Open Card Sorting Analysis</i> <br>
+          Advised by <a href="https://www.cs.carleton.edu/faculty/adalal/">Dr. Amy Csizmar Dalal</a> at Carleton College. <br>
+          <a href="https://dl.acm.org/doi/10.1145/3290607.3312856">CHI '19: Extended Abstract</a>, <a href="https://dl.acm.org/doi/10.1145/3287324.3293716">SIGCSE '19: Abstract & Poster</a>
+        </p>
+      </article>
+
+      <article>
+        <h1>Teaching</h1>
+
+        <p>
+          <a href="https://www.cs124.org/">CS124: Introduction to Computer Science</a> <span class="flush-right">Fall 2020, Spring 2021, Summer 2021</span> <br>
+          <i><a href="https://www.geoffreychallen.com/">Dr. Geoffrey Challen</a></i>
+        </p>
+      </article>
+
+      <article>
+        <h1>Awards</h1>
+
+        <p>
+          <a href="https://cs.illinois.edu/about/awards/graduate-fellowships-awards/outstanding-teaching-assistants">Outstanding Teaching Assistant</a> <span class="flush-right">Spring 2021</span>
+        </p>
+      </article>
+
+      <article>
+        <h1>Service</h1>
+
+        <p>
+          Reviewer for CSCW '21 <span class="flush-right">2020</span>
+        </p>
+
+      </article>
+  
+      <footer></footer>
     </div>
   </body>
 </html>
