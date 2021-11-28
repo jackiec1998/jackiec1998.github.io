@@ -1,0 +1,19 @@
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+#header > img {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+}
+
+#information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.3;
+}
