@@ -1,3 +1,3 @@
 # Personal Website for Jackie Chan
 
-Built through persistant Googling.
+Built through persistent Googling.
