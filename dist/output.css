@@ -536,18 +536,12 @@ a:hover {
   height: 15rem;
 }
 
-.w-fit {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.w-60 {
+  width: 15rem;
 }
 
 .max-w-2xl {
   max-width: 42rem;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -578,51 +572,12 @@ a:hover {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 1;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.border-b {
-  border-bottom-width: 1px;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-blue-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .text-center {
@@ -649,32 +604,12 @@ a:hover {
     display: block;
   }
 
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:flex-auto {
-    flex: 1 1 auto;
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
 
   .md\:items-center {
     align-items: center;
-  }
-
-  .md\:justify-center {
-    justify-content: center;
-  }
-
-  .md\:justify-items-center {
-    justify-items: center;
-  }
-
-  .md\:justify-items-stretch {
-    justify-items: stretch;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -687,18 +622,5 @@ a:hover {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:self-center {
-    align-self: center;
-  }
-
-  .md\:bg-slate-600 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-  }
-
-  .md\:align-middle {
-    vertical-align: middle;
   }
 }
