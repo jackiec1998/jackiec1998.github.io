@@ -1,0 +1,49 @@
+name: deploy-page
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: https://jackiec1998.github.io/
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        working-directory: ./
+        run: npm install
+
+      # - name: Create last-updated.json
+      #   working-directory: ./
+      #   run: node ./last-updated.js
+
+      - name: Build the React app
+        working-directory: ./
+        run: npm run build
+
+      - name: Upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: github-pages
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
