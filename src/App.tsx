@@ -60,6 +60,9 @@ const Link = ({
 );
 
 const HoverModal = ({ children }: { children: React.ReactNode }) => {
+	// TODO: If there's not enough space to show the image above, show it to the left or right instead.
+	// TODO: Include Rocky's Instagram handle in the modal.
+
 	const [isHovered, setIsHovered] = useState(false);
 
 	const handleTouch = () => {
