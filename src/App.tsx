@@ -112,11 +112,11 @@ const About = () => {
 				<Link href="https://en.wikipedia.org/wiki/Social_computing">
 					social computing
 				</Link>
-				, a subfield of human-computer interaction. My research involves a
-				diverse set of skills and tools, from designing user experiments and
-				conducting statistical analyses to building infrastructure for
-				large-scale data collection and applying machine learning and natural
-				language processing techniques.
+				, a subfield of human-computer interaction. My research draws on a
+				diverse set of skills and tools. I design user experiments, conduct
+				statistical analyses, build infrastructure for large-scale data
+				collection, and apply techniques from machine learning and natural
+				language processing.
 			</Paragraph>
 			<Paragraph>
 				Outside of work, I enjoy listening to music, I'm a news and political
@@ -235,7 +235,6 @@ const Footer = () => (
 	</div>
 );
 
-// Dummy comment.
 const App = () => {
 	return (
 		<div className="min-h-screen flex flex-col items-center justify-center">
