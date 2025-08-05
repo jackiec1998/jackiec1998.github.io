@@ -133,7 +133,16 @@ const About = () => {
 };
 
 const Education = () => {
-	const degrees = [
+	type Degree = {
+		school: string;
+		degree: string;
+		subject: string;
+		start: string;
+		end: string;
+		img: string;
+	};
+
+	const degrees: Degree[] = [
 		{
 			school: "University of Illinois Urbana-Champaign",
 			degree: "PhD",
@@ -152,7 +161,7 @@ const Education = () => {
 		},
 	];
 
-	const EducationItem = ({ info }: { info: (typeof degrees)[0] }) => (
+	const EducationItem = ({ info }: { info: Degree }) => (
 		<li className="flex items-center space-x-4">
 			<img src={`/${info.img}`} className="h-10 w-10 object-contain" />
 			<div>
