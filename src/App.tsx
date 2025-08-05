@@ -124,8 +124,8 @@ const About = () => {
 			<Paragraph>
 				Outside of work, I enjoy listening to music; I'm a news and political
 				junkie; I enjoy reading Wikipedia; and I'm a cat dad to{" "}
-				<HoverModal>Rocky</HoverModal>, who I adopted during the COVID pandemic.
-				I'm also a proud Minnesotan, which I thankfully call home.
+				<HoverModal>Rocky</HoverModal>, who I adopted during COVID. I'm also a
+				proud Minnesotan, which I thankfully call home.
 				<MinnesotaFlag />
 			</Paragraph>
 		</article>
