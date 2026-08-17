@@ -11,7 +11,7 @@ const Me = () => {
 					Jackie Chan
 				</span>
 				<span className="text-[9pt] text-gray-500">
-					Doctoral Candidate @ University of Illinois
+					PhD in Computer Science @ University of Illinois
 				</span>
 				<span className="text-[9pt] text-gray-500">
 					jackiec1998 [at] gmail [dot] com
@@ -99,34 +99,33 @@ const About = () => {
 		<article className="space-y-2">
 			<Header>About</Header>
 			<Paragraph>
-				I'm a computer science doctoral candidate at the{" "}
+				I'm a recent PhD graduate from the{" "}
 				<Link href="https://siebelschool.illinois.edu/">
 					University of Illinois Urbana-Champaign
 				</Link>
-				. I work with{" "}
+				. I worked with{" "}
 				<Link href="http://www.eshwarchandrasekharan.com/">
 					Dr. Eshwar Chandrasekharan
 				</Link>
-				, who is my advisor, studying online communities, social media
+				, who was my advisor, studying online communities, social media
 				algorithms, and content moderation.
 			</Paragraph>
 			<Paragraph>
-				I work in a field called{" "}
+				I worked in a field called{" "}
 				<Link href="https://en.wikipedia.org/wiki/Social_computing">
 					social computing
 				</Link>
-				, a subfield of human-computer interaction. My research draws on a
-				diverse set of skills and tools. I design user experiments, conduct
-				statistical analyses, build infrastructure for large-scale data
-				collection, and apply techniques from machine learning and natural
+				, a subfield of human-computer interaction. My research involved a
+				diverse set of skills and tools. I designed user experiments, conducted
+				statistical analyses, built infrastructure for large-scale data
+				collection, and applied techniques from machine learning and natural
 				language processing.
 			</Paragraph>
 			<Paragraph>
 				Outside of work, I enjoy listening to music; I'm a news and political
 				junkie; I enjoy reading Wikipedia; and I'm a cat dad to{" "}
 				<HoverModal>Rocky</HoverModal>, who I adopted during COVID. I'm also a
-				proud Minnesotan, which I thankfully call home.
-				<MinnesotaFlag />
+				proud Minnesotan. <MinnesotaFlag />
 			</Paragraph>
 		</article>
 	);
@@ -147,8 +146,8 @@ const Education = () => {
 			school: "University of Illinois Urbana-Champaign",
 			degree: "PhD",
 			subject: "Computer Science",
-			start: "2021",
-			end: "Exp. 2026",
+			start: "2020",
+			end: "2026",
 			img: "illinois.svg",
 		},
 		{
@@ -215,9 +214,9 @@ const Buttons = () => {
 		href: string;
 	}[] = [
 		{
-			label: "CV",
+			label: "Resume",
 			icon: <IoDocumentText />,
-			href: "Chan, Jackie - CV.pdf",
+			href: "Chan, Jackie - Resume.pdf",
 		},
 		{
 			label: "GitHub",
